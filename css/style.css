@@ -1,0 +1,505 @@
+
+@font-face {
+    font-family: Montserrat-100;
+    src: url('../fonts/Montserrat-Thin.ttf');
+}
+@font-face {
+    font-family: Montserrat-300;
+    src: url('../fonts/Montserrat-ExtraLight.ttf');
+}
+@font-face {
+    font-family: Montserrat-400;
+    src: url('../fonts/Montserrat-Light.ttf');
+}
+@font-face {
+    font-family: Montserrat-500;
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: Montserrat-600;
+    src: url('../fonts/Montserrat-Medium.ttf');
+}
+@font-face {
+    font-family: Montserrat-700;
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+}
+@font-face {
+    font-family: Montserrat-800;
+    src: url('../fonts/Montserrat-Bold.ttf');
+}
+@font-face {
+    font-family: Montserrat-900;
+    src: url('../fonts/Montserrat-ExtraBold.ttf');
+}
+
+
+
+/* =================================================================================================================*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* ================================================================================================================= */
+
+.display-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a,i{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ========================= Navbar CSS CODE ================================================================================= */
+
+
+.navbar{
+    height: 17vh;
+    border-bottom: .1px solid rgb(186, 186, 187);
+}
+.web-logo-img img{
+    width: 90%;
+}
+
+.social-links{
+    justify-content: flex-end;
+    font-size: 1.5vw;
+    color: #7B5F43;
+    position: relative;
+}
+.social-links::after{
+    content: '';
+    width: 89%;
+    height: 1.5px;
+    background-color: #AEAEAE;
+    position: absolute;
+    top: 100%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+}
+
+
+.nav-right{
+    background-color: #7B5F43;
+}
+
+
+
+
+
+/* ======================================================================================================== */
+/* ============ Home Part CSS CODE ============================================================================================= */
+/* ======================================================================================================== */
+main,
+header,
+footer{
+    overflow: hidden;
+}
+.home-sec-2{
+    height: 150vh;
+}
+.h2-top{
+    flex-direction: column;
+    height: 20%;
+}
+.h2-top h5{
+    font-weight: 400;
+    color: #7B5F43;
+}
+.h2-bottom{
+    height: 80%;
+}
+.h2-b-left,
+.h2-b-middle,
+.h2-b-right{
+    height: 100%;
+}
+.h2-product-photo{
+    height: 65%;
+}
+.h2-product-photo .prod-img{
+    width: fit-content;
+    overflow: hidden;
+}
+.h2-product-photo .prod-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.h2-product-dets p{
+    font-size: 1vw;
+    color: #7B5F43;
+    line-height: 1;
+    font-weight: 400;
+    /* background-color: red; */
+    position: relative;
+}
+.h2-product-dets p::after{
+    content: attr(data-seq-num);
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    font-size: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat-900;
+    color: #7b5f4320;
+}
+.h2-product-dets h5{
+    color: #7B5F43;
+    line-height: 1;
+}
+.h2-product-dets span{
+    width: 100px;
+    height: 2px;
+    background-color: #7B5F43;
+}
+.h2-product-dets .pro-btn{
+    background-color: #7B5F43;
+}
+.h2-product-dets .pro-btn:hover{
+    color: white;
+    background-color: #7B5F43;
+}
+
+
+
+
+/* ======================================================================================================== */
+.home-sec-3{
+    height: 100vh;
+    background-color: #AC8053;
+}
+
+.h3-wrapper {
+    box-shadow:  2px 2px 10px 2px #7B5F43,
+             -2px -2px 10px 2px #AC8053;
+}
+.h3-photo img,
+.h3-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.h3-right-overlay{
+    width: 95%;
+    height: 100%;
+    /* background-color: r  gb(255, 0, 0); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: flex-end;
+}
+
+.h3-inner-overlay-box{
+    width: 100%;
+    height: 30%;
+    opacity: .9;
+}
+
+
+
+.h3-right-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ======================================================================================================== */
+
+.home-sec-4{
+    height: 100vh;
+    background-color: #F4F4F4;
+}
+.h4-top{
+    height: 10vh;
+    align-items: flex-end;
+}
+.h4-bottom{
+    height: 90vh;
+}
+.h4-bottom img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.h4-left-bg-img img{
+    filter: brightness(30%);
+}
+.p4-left-overlay{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.p4-overlay-img{
+    box-shadow:  16px 16px 37px #9b9b9b,-16px -16px 37px transparent;
+}
+
+
+.h4-right small{
+    opacity: .9;   
+}
+.h4-right p{
+    color: #74433D;
+    font-weight: 500;   
+}
+.h4-right span{
+    opacity: .8;   
+}
+
+
+.viewAllProdBtn{
+    background-color: #74433D;
+}
+
+
+/* ======================================================================================================== */
+
+.home-sec-5{
+    height: 115vh;
+}
+.h5-top{
+    height: 20vh;
+}
+.h5-bottom{
+    height: 95vh;
+}
+.h5-bottom  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.h5-b-top{
+    position: relative;
+}
+
+
+.h5-dets-div{
+    width: 100%;
+    height: 20%;
+}
+.h5-dets-div h3{
+    line-height: 1;
+}
+.h5-dets-div p{
+    line-height: 1;
+}
+
+.h5-inner-center-box form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.h5-inner-center-box form input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid rgba(84, 84, 84, 0.7);
+    border-radius: 0;
+}
+
+
+
+
+/* ==================================================================================================== */
+/* ============== Footer Part CSS CODE ====================================================================================== */
+/* ==================================================================================================== */
+
+footer{
+    height: 40vh;
+    width: 100%;
+    position: relative; 
+}
+
+.footer-links{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2vw;
+    font-weight: 400
+}
+footer .active{
+    font-weight: 600;
+}
+.footer-bottom-div{
+    width: 100%;
+    height: 30px;
+    background-color: #D9D9D9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* ============================================================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================================================================================================ */
+/* ==================== Products Page CSS ================================================================================ */
+/* ================================================================================================================ */
+
+.prod-1{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(135deg, #f8f0e7 0%, #fdfcfb 100%);
+}
+.prod-1 .p1-top{
+    height: 20vh;
+}
+.prod-1 .p1-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.prod-1 .p1-bottom::after{
+    position: absolute;
+    top: -5%;
+    left: 0;
+    content: attr(product-heading);
+    padding: 5px 20px ;
+    font-size: 1.4vw;
+    font-weight: 600;
+    opacity: .9;
+    text-decoration: 3px #74433D underline;
+}
+.prod-1 .prod-item{
+    width: 22%;
+    height: 70vh;
+}
+.prod-1 .prod-img{
+    width: 100%;
+    height: 55%;
+    /* background-color: tomato; */
+}
+.prod-1 .prod-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.prod-1 .prod-dets{
+    width: 100%;
+    height: 45%;
+    
+}
+.prod-1 .prod-dets small{
+    text-align: justify;
+}
+.prod-1 .view-prod-btn{
+    background-color: #74433D;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* ============================================================================================ */
+/* ====== CSS for viewing single product page ================================================= */
+
+.p1-view-product{
+    height: 80vh;
+    background-color: white;
+    display: flex;
+}
+.view-prod-img{
+    width: 35%;
+    height: 70%;
+}
+.view-prod-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.view-prod-dets{
+    width: 60%;
+    height: 80%;
+    /* background-color: rgb(221, 255, 0); */
+}
+.view-prod-dets h4{
+    font-weight: 400;
+}
+.rating-star i{
+    font-size: 1.4vw;
+}
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================= */
+/* ======================================================================================================= */
+/* ====================== Contact / Enquiry CSS CODE  ============================================================= */
+/* ======================================================================================================= */
+
+.contact-wrapper{
+    width: 100%;
+    height: 90vh;
+}
+
+
+.contact-wrapper form{
+    width: 100%;
+    height: 65%;
+}
+.contact-wrapper .form-left{
+    width: 50%;
+    height: 100%;
+}
+.contact-wrapper .form-right{
+    width: 50%;
+    height: 100%;
+}
+.contact-wrapper form label{
+    opacity: 0.6;
+}
+.contact-wrapper form input,
+.contact-wrapper form textarea{
+    resize: none;
+    background-color: #e8e8e85b;
+    border: 1px solid rgba(151, 151, 151, 0.495);
+}
+
+.contact-wrapper form textarea::-webkit-scrollbar{
+    width: 0.5rem;
+    background-color:white;
+    border-radius: 20px;
+}
+.contact-wrapper form textarea::-webkit-scrollbar-thumb{
+    background-color:#74433D;
+    border-radius: 10px;
+}
+
+/* ======================================================================================================= */
+/* ======================================================================================================= */
